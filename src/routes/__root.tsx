@@ -46,8 +46,10 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
             <head>
                 <HeadContent />
             </head>
-            <body>
-                {children}
+
+            <body className="flex h-dvh w-dvw flex-col">
+                <main className="flex-1">{children}</main>
+
                 <Scripts />
             </body>
         </html>
